@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Form</title>
+  <style>
+    body { font-family: Arial; margin: 20px; }
+    fieldset { margin-bottom: 20px; padding: 15px; }
+    label { display: inline-block; width: 150px; margin-bottom: 5px; }
+    input, select, textarea { width: 250px; }
+    .radio-group, .checkbox-group { display: flex; gap: 10px; }
+  </style>
+</head>
+<body>
+
+  <form>
+    <!-- Basic Info -->
+    <fieldset>
+      <legend><b>Basic Info</b></legend>
+      <label>Employee ID:</label>
+      <input type="text" name="empid"><br>
+
+      <label>Last Name:</label>
+      <input type="text" name="lastname"><br>
+
+      <label>First Name:</label>
+      <input type="text" name="firstname"><br>
+
+      <label>Gender:</label>
+      <div class="radio-group">
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="xxx"> XXX
+        <input type="radio" name="gender" value="zzz"> ZZZ
+      </div>
+
+      <label>Title:</label>
+      <input type="text" name="title"><br>
+
+      <label>Birth Date:</label>
+      <input type="date" name="birthdate"><br>
+
+      <label>Hire Date:</label>
+      <input type="date" name="hiredate"><br>
+
+      <label>Reports To:</label>
+      <select>
+        <option>Buchanan</option>
+        <option>Fuller</option>
+      </select><br>
+    </fieldset>
+
+    <!-- Contact Info -->
+    <fieldset>
+      <legend><b>Contact Info</b></legend>
+      <label>Email:</label>
+      <input type="email" name="email"><br>
+
+      <label>Address:</label>
+      <input type="text" name="address"><br>
+
+      <label>City:</label>
+      <input type="text" name="city"><br>
+
+      <label>Postal Code:</label>
+      <input type="text" name="postal"><br>
